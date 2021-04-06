@@ -66,8 +66,7 @@ class AviReader(VideoReader):
     def __getitem__(self,key):
         return self.frames[key]
 
-
-    def res(self):
+    def resolution(self):
         if self.frames is None:
             raise Exception("Avi file not loaded")
 
